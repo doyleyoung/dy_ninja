@@ -1,0 +1,225 @@
+    <div class="row path-item">
+      <div class="large-7 columns">
+        <div class="circle circle-right right"></div>
+      </div>
+      <div class="large-5 columns path-text right">
+        <h3>1981</h3>
+        <p>
+          The babysitter's oldest son turned on the TV. Then, he turned on a box connected to it and opened an entirely new world.
+        </p>
+        <a href="https://atariage.com/2600/">Atari 2600</a>
+      </div>
+    </div>
+    <div class="row path-item">
+      <div class="large-7 push-5 columns">
+        <div class="circle circle-left"></div>
+      </div>
+
+      <div class="large-5 pull-7 columns path-text left">
+        <h3>1982</h3>
+        <p>
+          Spent a first quarter on a video game instead of a sticky hand. That game got a LOT more quarters.
+        </p>
+        <a href="https://en.wikipedia.org/wiki/Zoo_Keeper_%28video_game%29">Zoo Keeper</a>
+      </div>
+    </div>
+    <div class="row path-item">
+      <div class="large-7 columns">
+        <div class="circle circle-right right"></div>
+      </div>
+      <div class="large-5 columns path-text right">
+        <h3>1984</h3>
+        <p>
+          Wait, a game with two joysticks? I could definitely spend 6 months worth of allowance on that.
+        </p>
+        <a href="http://www.arcade-museum.com/game_detail.php?game_id=8280">Karate Champ</a>
+        <br />
+        <a href="http://game-oldies.com/play-online/karate-champ-nintendo-nes#"><img src="img/buttons2.svg">Play now</a>
+      </div>
+    </div>
+    <div class="row path-item">
+      <div class="large-7 push-5 columns">
+        <div class="circle circle-left"></div>
+      </div>
+      <div class="large-5 pull-7 columns path-text left">
+        <h3>1985</h3>
+        <p>
+          The first game I played well enough to torture teenagers, one quarter and I could be there an hour or more.
+        </p>
+        <a href="http://www.mariowiki.com/VS._Super_Mario_Bros.">VS. Super Mario Bros.</a>
+        <br />
+        <a href="http://www.letsplaysnes.com/play-vs-super-mario-bros-home-edition-online-nes/"><img src="img/buttons2.svg">Play now</a>
+      </div>
+    </div>
+    <div class="row path-item">
+      <div class="large-7 columns">
+        <div class="circle circle-right right"></div>
+      </div>
+      <div class="large-5 columns path-text right">
+        <h3>1985</h3>
+        <p>
+          Christmas morning brought a brand new gaming system and with it an undying love for Nintendo.
+        </p>
+        <a href="http://nintendo.wikia.com/wiki/Nintendo_Entertainment_System">NES</a>
+      </div>
+    </div>
+    <div class="row path-item">
+      <div class="large-7 push-5 columns">
+        <div class="circle circle-left"></div>
+      </div>
+      <div class="large-5 pull-7 columns path-text left">
+        <h3>1986</h3>
+        <p>
+          The games just keep getting better and better. Too many to name, but two that spring to mind.
+        </p>
+        <a href="http://metroid.wikia.com/wiki/Metroid">Metroid</a>
+        <br />
+        <a href="http://nintendo8.com/game/395/metroid/"><img src="img/buttons2.svg">Play now</a>
+        <br />
+        <a href="http://zeldawiki.org/The_Legend_of_Zelda_%28Game%29">The Legend of Zelda</a>
+        <br />
+        <a href="http://nintendo8.com/game/810/legend_of_zelda/"><img src="img/buttons2.svg">Play now</a>
+      </div>
+    </div>
+    <div class="row path-item">
+      <div class="large-7 columns">
+        <div class="circle circle-right right"></div>
+      </div>
+      <div class="large-5 columns path-text right">
+        <h3>1986</h3>
+        <p>
+          Mom brought home a computer! It was an Apple II clone and it changed my life.
+        </p>
+        <a href="https://en.wikipedia.org/wiki/Laser_128">Laser 128</a>
+      </div>
+    </div>
+    <div class="row path-item">
+      <div class="large-7 push-5 columns">
+        <div class="circle circle-left"></div>
+      </div>
+      <div class="large-5 pull-7 columns path-text left">
+        <h3>1987</h3> The public library just got a whole lot better! They have books with games that you can play just by typing them into your computer, but there's always a typo you have to find and fix.
+        <p>
+        </p>
+        <a href="http://www.atariarchives.org/morebasicgames/">BASIC Computer Games</a>
+      </div>
+    </div>
+    <div class="row path-item">
+      <div class="large-7 columns">
+        <div class="circle circle-right right"></div>
+      </div>
+      <div class="large-5 columns path-text right">
+        <h3>1991</h3>
+        <p>
+          Hadoken, Shoryuken and Sonic Boom became regular terms in my friends' collective vocabulary.
+        </p>
+        <a href="http://streetfighter.wikia.com/wiki/Street_Fighter_II">Street Fighter II</a>
+        <br />
+        <a href="http://www.mofunzone.com/games/street_fighter_2_champion_edition.html"><img src="img/buttons2.svg">Play now</a>
+      </div>
+    </div>
+    <div class="row path-item">
+      <div class="large-7 push-5 columns">
+        <div class="circle circle-left"></div>
+      </div>
+      <div class="large-5 pull-7 columns path-text left">
+        <h3>1992</h3> My first programming class, a room full of Macs with Pascal and a lab with an internet connection to LANL supercomputers.
+        <p>
+        </p>
+        <a href="https://en.wikipedia.org/wiki/Pascal_%28programming_language%29">Pascal</a>
+        <br />
+        <a href="https://en.wikipedia.org/wiki/Vi">vi</a>
+        <br />
+        <a href="https://en.wikipedia.org/wiki/Gopher_%28protocol%29">Gopher</a>
+        <br />
+        <a href="https://en.wikipedia.org/wiki/Supercomputing_Challenge">Supercomputing Challenge</a>
+        <br />
+      </div>
+    </div>
+    <div class="row path-item">
+      <div class="large-7 columns">
+        <div class="circle circle-right right"></div>
+      </div>
+      <div class="large-5 columns path-text right">
+        <h3>1992</h3>
+        <p>
+          Found the best use yet for the internet; learning every fatality.
+        </p>
+        <a href="http://mortalkombat.wikia.com/wiki/Mortal_Kombat_%281992_video_game%29">Mortal Kombat</a>
+      </div>
+    </div>
+    <div class="row path-item">
+      <div class="large-7 push-5 columns">
+        <div class="circle circle-left"></div>
+      </div>
+      <div class="large-5 pull-7 columns path-text left">
+        <h3>1993</h3> Added a new language and some amazing technical computing to the skill set
+        <p>
+        </p>
+        <a href="https://en.wikipedia.org/wiki/Fortran">Fortran</a>
+        <br />
+        <a href="http://www.wolfram.com/mathematica">Mathematica</a>
+        <br />
+      </div>
+    </div>
+    <div class="row path-item">
+      <div class="large-7 columns">
+        <div class="circle circle-right right"></div>
+      </div>
+      <div class="large-5 columns path-text right">
+        <h3>1993</h3>
+        <p>
+          Got hooked on some old school entertainment
+        </p>
+        <a href="https://en.wikipedia.org/wiki/Twilight_Zone_%28pinball%29">Twilight Zone pinball</a>
+      </div>
+    </div>
+    <div class="row path-item">
+      <div class="large-7 push-5 columns">
+        <div class="circle circle-left"></div>
+      </div>
+      <div class="large-5 pull-7 columns path-text left">
+        <h3>1994</h3> Got a job at a manufacturing plant, "helped" with some circuits.  Discovered my
+        brain works much better with digital.
+        <p>
+        </p>
+        <a href="http://www.trademarkia.com/map/ati-74368238.htm">ATI</a>
+        <br />
+      </div>
+    </div>
+    <div class="row path-item">
+      <div class="large-7 columns">
+        <div class="circle circle-right right"></div>
+      </div>
+      <div class="large-5 columns path-text right">
+        <h3>1996</h3>
+        <p>
+          Entered the University of New Mexico
+        </p>
+        <a href="http://www.cplusplus.com/">C++</a>
+      </div>
+    </div>
+    <div class="row path-item">
+      <div class="large-7 push-5 columns">
+        <div class="circle circle-left"></div>
+      </div>
+      <div class="large-5 pull-7 columns path-text left">
+        <h3>1996</h3> My old love is at it again
+        <p>
+        </p>
+        <a href="https://en.wikipedia.org/wiki/Nintendo_64">Nintendo 64</a>
+        <br />
+      </div>
+    </div>
+    <div class="row path-item">
+      <div class="large-7 columns">
+        <div class="circle circle-right right"></div>
+      </div>
+      <div class="large-5 columns path-text right">
+        <h3>1997</h3>
+        <p>
+          My first taste of functional programming
+        </p>
+        <a href="https://en.wikipedia.org/wiki/Scheme_%28programming_language%29">Scheme</a>
+      </div>
+    </div>

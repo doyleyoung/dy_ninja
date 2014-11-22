@@ -1,0 +1,18 @@
+{{#each this}}
+<div class="row path-item">
+  {{{leftThenRight}}}
+  <h3>{{timeline_title}}</h3>
+  <p>
+    {{timeline_content}}
+  </p>
+  {{#each links}}
+  {{#if timeline_link_icon}}
+  <a href="{{timeline_link}}"><img src="{{timeline_link_icon}}">{{timeline_link_text}}</a>
+  {{else}}
+  <a href="{{timeline_link}}">{{timeline_link_text}}</a>
+  {{/if}}
+  <br />
+  {{/each}}
+</div>
+</div>
+{{/each}}
