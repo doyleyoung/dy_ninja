@@ -1,8 +1,16 @@
-$(document).ready(function () {
+$(function () {
+  $(window).scroll(function () {
+    if ($(this).scrollTop() >= 100) {
+      $(".icon-bar > *").stop().animate({padding: "0em"}, 250, "linear", function () {return true;});
+    } else {
+      $(".icon-bar > *").stop().animate({padding: "1.25rem"}, 250, "linear", function () {return true;});
+    }
+  });
+
   $('a[href^="#"]').click(function (event) {
     var id = $(this).attr("href"),
-        offset = 120,
-        target = $(id).offset().top - offset;
+    offset = 120,
+    target = $(id).offset().top - offset;
 
     $('html, body').animate({
       scrollTop: target
@@ -10,20 +18,8 @@ $(document).ready(function () {
 
     event.preventDefault();
   });
-});
 
-jQuery(window).scroll(function () {
-    var body = $("body");
-    if (body.scrollTop() >= 100) {
-        // $(".icon-bar > *").addClass("scroll-padding");
-        $(".icon-bar > *").animate({padding: "0em"}, 1000, "linear");
-    } else {
-        //$(".icon-bar > *").removeClass("scroll-padding");
-        $(".icon-bar > *").animate({padding: "1.25rem"}, 1000, "linear");
-    }
-});
-
-$(function () {
+  // timeline
   var timelineData = [{"timeline_title":"1981",
       "timeline_content":"The babysitter's oldest son turned on the TV. Then, he turned on a box connected to it and opened an entirely new world.",
       "links":[{"timeline_link":"https://atariage.com/2600/","timeline_link_text":"Atari 2600"}]},
@@ -98,16 +94,8 @@ $(function () {
     }
   }
 
-  // Register a helper
   Handlebars.registerHelper('leftThenRight', rightIsFirst(true));
-
-  //Get the HTML from the template in the script tag
   var source = $("#timeline-template").html();
-
-  //Compile the template
-  //var template = Handlebars.compile(source);
-  //var html = template(timelineData);
   var html = Handlebars.templates.timeline(timelineData);
   $(".timelineContent").append(html);
-
 });

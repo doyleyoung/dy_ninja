@@ -10,6 +10,7 @@
 .header-fill {
   height: 120px;
 }
+
 /*------------------------------------
  timeline styles
 ------------------------------------*/
@@ -56,16 +57,16 @@
   width: 2px;
   bottom: 0;
   position: absolute;
-  top: 450px;
+  top: 650px;
   left: 50%;
   z-index: 0;
-  height: 3450px;
+  height: 5500px;
 }
 /*------------------------------------
  medium timeline styles
 ------------------------------------*/
 
-@media only screen and (max-width: 800px) and (min-width: 768px) {
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
   .line {
     display: none !important;
   }
@@ -106,5 +107,17 @@
     margin-top: 60px;
     margin-left: auto;
     margin-right: auto;
+  }
+  .hide-for-small {
+    display: none !important;
+  }
+  .circle {
+    clear:both;
+  }
+  .pull-7 {
+    right:0;
+  }
+  .push-5 {
+    left:0;
   }
 }
