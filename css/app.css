@@ -120,4 +120,13 @@
   .push-5 {
     left:0;
   }
+  .right {
+    float: none !important;
+  }
+  .circle-right {
+    right:0 !important;
+  }
+  .circle-left {
+    left:0 !important;
+  }
 }
