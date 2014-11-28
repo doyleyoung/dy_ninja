@@ -1,26 +1,18 @@
 $(function () {
   $(window).scroll(function () {
     if ($(this).scrollTop() >= 100) {
-      $('.icon-bar > *').stop().animate({padding: '0em'}, 250, 'linear');
+      $(".icon-bar > *").stop().animate({padding: "0em"}, 250, "linear");
     } else {
-      $('.icon-bar > *').stop().animate({padding: '1.25rem'}, 250, 'linear');
-    }
-  });
-
-  $('.video').click(function (event) {
-    if($('div.embedded-video').is(':visible')) {
-      $('div.embedded-video').hide("slow");
-    } else {
-      $('div.embedded-video').show("slow");
+      $(".icon-bar > *").stop().animate({padding: "1.25rem"}, 250, "linear");
     }
   });
 
   $('a[href^="#"]').click(function (event) {
-    var id = $(this).attr('href'),
+    var id = $(this).attr("href"),
     offset = 120,
     target = $(id).offset().top - offset;
 
-    $('html, body').animate({
+    $("html, body").animate({
       scrollTop: target
     }, 500);
 
@@ -132,7 +124,7 @@ $(function () {
       "links":[{"timeline_link":"http://www.dollartreeinfo.com/","timeline_link_text":"Dollar Tree"},{"timeline_link":"https://en.wikipedia.org/wiki/Test-driven_development","timeline_link_text":"TDD"},{"timeline_link":"http://junit.org/","timeline_link_text":"JUnit"},{"timeline_link":"http://www.seleniumhq.org/","timeline_link_text":"Selenium"},{"timeline_link":"https://jasmine.github.io/","timeline_link_text":"Jasmine"},{"timeline_link":"https://maven.apache.org/","timeline_link_text":"Maven"}]},
   ];
 
-  function rightIsFirst(right) {
+  var rightFirst = function (right) {
     return function() {
       var result = "";
       if(right) {
@@ -153,8 +145,17 @@ $(function () {
     }
   }
 
-  Handlebars.registerHelper('leftThenRight', rightIsFirst(true));
+  Handlebars.registerHelper("leftThenRight", rightFirst(true));
   var source = $("#timeline-template").html();
   var html = Handlebars.templates.timeline(timelineData);
   $(".timelineContent").append(html);
+
+  $("a.final-video").click(function (event) {
+    if($("div.embedded-video").is(":visible")) {
+      $("div.embedded-video").hide("slow");
+    } else {
+      $("div.embedded-video").show("slow");
+    }
+    event.preventDefault();
+  });
 });

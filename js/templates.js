@@ -33,7 +33,7 @@ templates['timeline'] = template({"1":function(depth0,helpers,partials,data) {
   return buffer;
 },"6":function(depth0,helpers,partials,data) {
   var helper, functionType="function", helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression;
-  return "      <a class=\"video\">"
+  return "      <a class=\"final-video\">"
     + escapeExpression(((helper = (helper = helpers.timeline_link_text || (depth0 != null ? depth0.timeline_link_text : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"timeline_link_text","hash":{},"data":data}) : helper)))
     + "</a>\n      <div class=\"embedded-video\">\n        <video width=\"352\" height=\"288\" controls>\n          <source src=\""
     + escapeExpression(((helper = (helper = helpers.timeline_video_link_mp4 || (depth0 != null ? depth0.timeline_video_link_mp4 : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"timeline_video_link_mp4","hash":{},"data":data}) : helper)))
