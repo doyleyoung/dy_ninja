@@ -19,7 +19,7 @@ templates['timeline'] = template({"1":function(depth0,helpers,partials,data) {
   return buffer + "  <br />\n";
 },"3":function(depth0,helpers,partials,data) {
   var helper, functionType="function", helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression;
-  return "  <a href=\""
+  return "    <a href=\""
     + escapeExpression(((helper = (helper = helpers.timeline_link || (depth0 != null ? depth0.timeline_link : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"timeline_link","hash":{},"data":data}) : helper)))
     + "\"><img src=\""
     + escapeExpression(((helper = (helper = helpers.timeline_link_icon || (depth0 != null ? depth0.timeline_link_icon : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"timeline_link_icon","hash":{},"data":data}) : helper)))
@@ -27,8 +27,22 @@ templates['timeline'] = template({"1":function(depth0,helpers,partials,data) {
     + escapeExpression(((helper = (helper = helpers.timeline_link_text || (depth0 != null ? depth0.timeline_link_text : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"timeline_link_text","hash":{},"data":data}) : helper)))
     + "</a>\n";
 },"5":function(depth0,helpers,partials,data) {
+  var stack1, buffer = "";
+  stack1 = helpers['if'].call(depth0, (depth0 != null ? depth0.timeline_video_link_mp4 : depth0), {"name":"if","hash":{},"fn":this.program(6, data),"inverse":this.program(8, data),"data":data});
+  if (stack1 != null) { buffer += stack1; }
+  return buffer;
+},"6":function(depth0,helpers,partials,data) {
   var helper, functionType="function", helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression;
-  return "  <a href=\""
+  return "      <a class=\"video\">"
+    + escapeExpression(((helper = (helper = helpers.timeline_link_text || (depth0 != null ? depth0.timeline_link_text : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"timeline_link_text","hash":{},"data":data}) : helper)))
+    + "</a>\n      <div class=\"embedded-video\">\n        <video width=\"352\" height=\"288\" controls>\n          <source src=\""
+    + escapeExpression(((helper = (helper = helpers.timeline_video_link_mp4 || (depth0 != null ? depth0.timeline_video_link_mp4 : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"timeline_video_link_mp4","hash":{},"data":data}) : helper)))
+    + "\" type=\"video/mp4\">\n          <source src=\""
+    + escapeExpression(((helper = (helper = helpers.timeline_video_link_ogg || (depth0 != null ? depth0.timeline_video_link_ogg : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"timeline_video_link_ogg","hash":{},"data":data}) : helper)))
+    + "\" type=\"video/ogg\">\n          Your browser does not support the video tag.  Might want to get something new.\n        </video>\n      </div>\n";
+},"8":function(depth0,helpers,partials,data) {
+  var helper, functionType="function", helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression;
+  return "      <a href=\""
     + escapeExpression(((helper = (helper = helpers.timeline_link || (depth0 != null ? depth0.timeline_link : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"timeline_link","hash":{},"data":data}) : helper)))
     + "\">"
     + escapeExpression(((helper = (helper = helpers.timeline_link_text || (depth0 != null ? depth0.timeline_link_text : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"timeline_link_text","hash":{},"data":data}) : helper)))

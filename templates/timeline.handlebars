@@ -7,9 +7,20 @@
   </p>
   {{#each links}}
   {{#if timeline_link_icon}}
-  <a href="{{timeline_link}}"><img src="{{timeline_link_icon}}">{{timeline_link_text}}</a>
+    <a href="{{timeline_link}}"><img src="{{timeline_link_icon}}">{{timeline_link_text}}</a>
   {{else}}
-  <a href="{{timeline_link}}">{{timeline_link_text}}</a>
+    {{#if timeline_video_link_mp4}}
+      <a class="video">{{timeline_link_text}}</a>
+      <div class="embedded-video">
+        <video width="352" height="288" controls>
+          <source src="{{timeline_video_link_mp4}}" type="video/mp4">
+          <source src="{{timeline_video_link_ogg}}" type="video/ogg">
+          Your browser does not support the video tag.  Might want to get something new.
+        </video>
+      </div>
+    {{else}}
+      <a href="{{timeline_link}}">{{timeline_link_text}}</a>
+    {{/if}}
   {{/if}}
   <br />
   {{/each}}

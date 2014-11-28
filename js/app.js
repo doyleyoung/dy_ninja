@@ -1,14 +1,22 @@
 $(function () {
   $(window).scroll(function () {
     if ($(this).scrollTop() >= 100) {
-      $(".icon-bar > *").stop().animate({padding: "0em"}, 250, "linear", function () {return true;});
+      $('.icon-bar > *').stop().animate({padding: '0em'}, 250, 'linear');
     } else {
-      $(".icon-bar > *").stop().animate({padding: "1.25rem"}, 250, "linear", function () {return true;});
+      $('.icon-bar > *').stop().animate({padding: '1.25rem'}, 250, 'linear');
+    }
+  });
+
+  $('.video').click(function (event) {
+    if($('div.embedded-video').is(':visible')) {
+      $('div.embedded-video').hide("slow");
+    } else {
+      $('div.embedded-video').show("slow");
     }
   });
 
   $('a[href^="#"]').click(function (event) {
-    var id = $(this).attr("href"),
+    var id = $(this).attr('href'),
     offset = 120,
     target = $(id).offset().top - offset;
 
@@ -97,7 +105,7 @@ $(function () {
       "links":[{"timeline_link":"https://en.wikipedia.org/wiki/GameCube","timeline_link_text":"GameCube"}]},
     {"timeline_title":"2001",
       "timeline_content":"A very fun class and I can still show off the results.",
-      "links":[{"timeline_link":"http://www.blender.org/","timeline_link_text":"blender"},{"timeline_link":"https://www.python.org/","timeline_link_text":"python"},{"timeline_link":"examples/complete.mpg","timeline_link_text":"Final project"}]},
+      "links":[{"timeline_link":"http://www.blender.org/","timeline_link_text":"blender"},{"timeline_link":"https://www.python.org/","timeline_link_text":"python"},{"timeline_video_link_mp4":"examples/complete.mp4","timeline_video_link_ogg":"examples/complete.ogg","timeline_link_text":"Final project"}]},
     {"timeline_title":"2002",
       "timeline_content":"Best first-person shooter ever.",
       "links":[{"timeline_link":"http://liandri.beyondunreal.com/Unreal_Tournament_2003","timeline_link_text":"Unreal Tournament 2003"}]},
