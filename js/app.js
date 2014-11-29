@@ -151,10 +151,15 @@ $(function () {
   $(".timelineContent").append(html);
 
   $("a.final-video").click(function (event) {
+    var video_height = parseInt($("div.embedded-video").css("height"), 10),
+        line_height = parseInt($(".line").css("height"), 10);
+
     if($("div.embedded-video").is(":visible")) {
       $("div.embedded-video").hide("slow");
+      $(".line").css("height", line_height - video_height + "px");
     } else {
       $("div.embedded-video").show("slow");
+      $(".line").css("height", line_height + video_height + "px");
     }
     event.preventDefault();
   });
