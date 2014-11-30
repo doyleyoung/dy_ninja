@@ -19,7 +19,7 @@ $(function () {
     event.preventDefault();
   });
 
-  // timeline
+  // time line
   var timelineData = [{"timeline_title":"1981",
       "timeline_content":"The babysitter's oldest son turned on the TV. Then, he turned on a box connected to it and opened an entirely new world.",
       "links":[{"timeline_link":"https://atariage.com/2600/","timeline_link_text":"Atari 2600"},{"timeline_link":"http://www.virtualatari.org/","timeline_link_text":"Play now","timeline_link_icon":"img/buttons2.svg"}]},
@@ -37,10 +37,10 @@ $(function () {
       "links":[{"timeline_link":"http://www.mariowiki.com/VS._Super_Mario_Bros.","timeline_link_text":"VS. Super Mario Bros."},{"timeline_link":"http://www.letsplaysnes.com/play-vs-super-mario-bros-home-edition-online-nes/","timeline_link_text":"Play now","timeline_link_icon":"img/buttons2.svg"}]},
     {"timeline_title":"1985",
       "timeline_content":"Christmas morning brought a brand new gaming system and with it an undying love for Nintendo.",
-      "links":[{"timeline_link":"http://nintendo.wikia.com/wiki/Nintendo_Entertainment_System","timeline_link_text":"NES"}]},
+      "links":[{"timeline_link":"http://nintendo.wikia.com/wiki/Nintendo_Entertainment_System","timeline_link_text":"NES"},{"timeline_link":"http://www.nesemu.com/","timeline_link_text":"Play now","timeline_link_icon":"img/buttons2.svg"}]},
     {"timeline_title":"1986",
       "timeline_content":"The games just keep getting better and better. Too many to name, but two that spring to mind.",
-      "links":[{"timeline_link":"http://metroid.wikia.com/wiki/Metroid","timeline_link_text":"Metroid"},{"timeline_link":"http://nintendo8.com/game/395/metroid/","timeline_link_text":"Play now","timeline_link_icon":"img/buttons2.svg"},{"timeline_link":"http://zeldawiki.org/The_Legend_of_Zelda_%28Game%29","timeline_link_text":"The Legend of Zelda"},{"timeline_link":"http://nintendo8.com/game/810/legend_of_zelda/","timeline_link_text":"Play now","timeline_link_icon":"img/buttons2.svg"}]},
+      "links":[{"timeline_link":"http://metroid.wikia.com/wiki/Metroid","timeline_link_text":"Metroid"},{"timeline_link":"http://www.nesemu.com/game/metroid","timeline_link_text":"Play now","timeline_link_icon":"img/buttons2.svg"},{"timeline_link":"http://zeldawiki.org/The_Legend_of_Zelda_%28Game%29","timeline_link_text":"The Legend of Zelda"},{"timeline_link":"http://www.nesemu.com/game/zelda","timeline_link_text":"Play now","timeline_link_icon":"img/buttons2.svg"}]},
     {"timeline_title":"1986",
       "timeline_content":"Mom brought home a computer! It was an Apple II clone and it changed my life.",
       "links":[{"timeline_link":"https://en.wikipedia.org/wiki/Laser_128","timeline_link_text":"Laser 128"}]},
@@ -123,11 +123,20 @@ $(function () {
       "timeline_content":"Had and idea and released my first personal app after a day's work.",
       "links":[{"timeline_link":"https://play.google.com/store/apps/details?id=mobi.ritf.RightIntheFace_Ad&feature=search_result","timeline_link_text":"Right In The Face"},{"timeline_link":"http://ritf.mobi/","timeline_link_text":"Associated website"}]},
     {"timeline_title":"2012",
-      "timeline_content":"My wife needed a calendar math app.",
+      "timeline_content":"My wife needed a calendar math app, it turned into a fun long term project.",
       "links":[{"timeline_link":"https://play.google.com/store/apps/details?id=mobi.daytoday.DayToDay","timeline_link_text":"DayToDay Android"},{"timeline_link":"https://github.com/doyleyoung/AndroidDayToDay","timeline_link_text":"Android source code"},{"timeline_link":"https://itunes.apple.com/us/app/daytoday/id596623324?mt=8","timeline_link_text":"DayToDay iOS"},{"timeline_link":"https://github.com/doyleyoung/IosDayToDay","timeline_link_text":"iOS source code"},{"timeline_link":"http://daytoday.mobi/","timeline_link_text":"Associated website"}]},
     {"timeline_title":"2012",
       "timeline_content":"Caught the testing religion while writing web apps.",
       "links":[{"timeline_link":"http://www.dollartreeinfo.com/","timeline_link_text":"Dollar Tree"},{"timeline_link":"https://en.wikipedia.org/wiki/Test-driven_development","timeline_link_text":"TDD"},{"timeline_link":"http://junit.org/","timeline_link_text":"JUnit"},{"timeline_link":"http://www.seleniumhq.org/","timeline_link_text":"Selenium"},{"timeline_link":"https://jasmine.github.io/","timeline_link_text":"Jasmine"},{"timeline_link":"https://maven.apache.org/","timeline_link_text":"Maven"}]},
+    {"timeline_title":"2013",
+      "timeline_content":"Needed a proof of concept for a web service, yesterday. Got it done using one of the best web frameworks available.",
+      "links":[{"timeline_link":"http://mojolicio.us/","timeline_link_text":"mojolicious"}]},
+    {"timeline_title":"2013",
+      "timeline_content":"After years of thinking I should, I finally started my own blog.",
+      "links":[{"timeline_link":"https://ghost.org/","timeline_link_text":"ghost"},{"timeline_link":"https://www.doyleyoung.net/","timeline_link_text":"My blog"}]},
+    {"timeline_title":"2014",
+      "timeline_content":"Resurrected the Quake 3 server, this time on a machine the size of a pack of cards.",
+      "links":[{"timeline_link":"http://beagleboard.org/BLACK","timeline_link_text":"BeagleBone Black"}]},
   ];
 
   var rightFirst = function (right) {

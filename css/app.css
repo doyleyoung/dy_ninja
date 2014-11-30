@@ -13,6 +13,13 @@
 .embedded-video {
   display:none;
 }
+a {
+  color:#000000;
+  text-decoration:underline;
+}
+.icon-bar a {
+  text-decoration:none;
+}
 
 /*------------------------------------
  timeline styles
