@@ -60,10 +60,10 @@
   width: 2px;
   bottom: 0;
   position: absolute;
-  top: 650px;
+  top: 1px; /* dynamic */
   left: 50%;
   z-index: 0;
-  height: 11000px;
+  height: 1px; /* dynamic */
 }
 /*------------------------------------
  medium timeline styles

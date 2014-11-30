@@ -22,7 +22,7 @@ $(function () {
   // timeline
   var timelineData = [{"timeline_title":"1981",
       "timeline_content":"The babysitter's oldest son turned on the TV. Then, he turned on a box connected to it and opened an entirely new world.",
-      "links":[{"timeline_link":"https://atariage.com/2600/","timeline_link_text":"Atari 2600"}]},
+      "links":[{"timeline_link":"https://atariage.com/2600/","timeline_link_text":"Atari 2600"},{"timeline_link":"http://www.virtualatari.org/","timeline_link_text":"Play now","timeline_link_icon":"img/buttons2.svg"}]},
     {"timeline_title":"1981",
       "timeline_content":"The computer that taught me to spell and speak.",
       "links":[{"timeline_link":"http://www.99er.net/spkspell.html","timeline_link_text":"Speak & Spell"},{"timeline_link":"http://www.speaknspell.co.uk/speaknspell.html","timeline_link_text":"Play now","timeline_link_icon":"img/buttons2.svg"}]},
@@ -119,6 +119,12 @@ $(function () {
     {"timeline_title":"2010",
       "timeline_content":"Wrote apps on everything I could get my hands on.",
       "links":[{"timeline_link":"http://www.capstonecorp.com/","timeline_link_text":"Capstone"},{"timeline_link":"https://android.com/","timeline_link_text":"Android"},{"timeline_link":"https://www.apple.com/ios/","timeline_link_text":"iOS"},{"timeline_link":"https://play.google.com/store/apps/details?id=mil.army.us.MobileCatalog","timeline_link_text":"One that saw the light of day, please fix the server"}]},
+    {"timeline_title":"2011",
+      "timeline_content":"Had and idea and released my first personal app after a day's work.",
+      "links":[{"timeline_link":"https://play.google.com/store/apps/details?id=mobi.ritf.RightIntheFace_Ad&feature=search_result","timeline_link_text":"Right In The Face"},{"timeline_link":"http://ritf.mobi/","timeline_link_text":"Associated website"}]},
+    {"timeline_title":"2012",
+      "timeline_content":"My wife needed a calendar math app.",
+      "links":[{"timeline_link":"https://play.google.com/store/apps/details?id=mobi.daytoday.DayToDay","timeline_link_text":"DayToDay Android"},{"timeline_link":"https://github.com/doyleyoung/AndroidDayToDay","timeline_link_text":"Android source code"},{"timeline_link":"https://itunes.apple.com/us/app/daytoday/id596623324?mt=8","timeline_link_text":"DayToDay iOS"},{"timeline_link":"https://github.com/doyleyoung/IosDayToDay","timeline_link_text":"iOS source code"},{"timeline_link":"http://daytoday.mobi/","timeline_link_text":"Associated website"}]},
     {"timeline_title":"2012",
       "timeline_content":"Caught the testing religion while writing web apps.",
       "links":[{"timeline_link":"http://www.dollartreeinfo.com/","timeline_link_text":"Dollar Tree"},{"timeline_link":"https://en.wikipedia.org/wiki/Test-driven_development","timeline_link_text":"TDD"},{"timeline_link":"http://junit.org/","timeline_link_text":"JUnit"},{"timeline_link":"http://www.seleniumhq.org/","timeline_link_text":"Selenium"},{"timeline_link":"https://jasmine.github.io/","timeline_link_text":"Jasmine"},{"timeline_link":"https://maven.apache.org/","timeline_link_text":"Maven"}]},
@@ -149,6 +155,11 @@ $(function () {
   var source = $("#timeline-template").html();
   var html = Handlebars.templates.timeline(timelineData);
   $(".timelineContent").append(html);
+
+  var circles = $(".timelineContent .circle");
+  var first_circle_top = circles.first().offset().top;
+  var last_circle_top = circles.last().offset().top;
+  $(".line").css({"top":first_circle_top + "px", "height": last_circle_top - first_circle_top + "px"});
 
   $("a.final-video").click(function (event) {
     var video_height = parseInt($("div.embedded-video").css("height"), 10),
