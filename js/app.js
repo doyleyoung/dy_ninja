@@ -7,7 +7,7 @@ $(function () {
     }
   });
 
-  $('a[href^="#"]').click(function (event) {
+  $("a[href^=\"#\"]").click(function (event) {
     var id = $(this).attr("href"),
     offset = 120,
     target = $(id).offset().top - offset;
@@ -19,7 +19,7 @@ $(function () {
     event.preventDefault();
   });
 
-  // time line
+  // time line content
   var timelineData = [{"timeline_title":"1981",
       "timeline_content":"The babysitter's oldest son turned on the TV. Then, he turned on a box connected to it and opened an entirely new world.",
       "links":[{"timeline_link":"https://atariage.com/2600/","timeline_link_text":"Atari 2600"},{"timeline_link":"http://www.virtualatari.org/","timeline_link_text":"Play now","timeline_link_icon":"img/buttons2.svg"}]},
@@ -139,47 +139,48 @@ $(function () {
       "links":[{"timeline_link":"http://beagleboard.org/BLACK","timeline_link_text":"BeagleBone Black"}]},
   ];
 
-  var rightFirst = function (right) {
-    return function() {
-      var result = "";
-      if(right) {
-        right = !right;
-        result = '<div class="large-7 columns">'
-        + '<div class="circle circle-right right"></div>'
-        + '</div>'
-        + '<div class="large-5 columns path-text right">';
-      } else {
-        right = !right;
-        result = '<div class="large-7 push-5 columns">'
-        + '<div class="circle circle-left"></div>'
-        + '</div>'
-        + '<div class="large-5 pull-7 columns path-text left">';
-      }
+  // initialize: expand handlebars html and append to time line, setup long center time line line
+  (function() {
+    var rightFirst = function (right) {
+      return function() {
+        var result = "";
+        if(right) {
+          right = !right;
+          result = '<div class="large-7 columns">'
+          + '<div class="circle circle-right right"></div>'
+          + '</div>'
+          + '<div class="large-5 columns path-text right">';
+        } else {
+          right = !right;
+          result = '<div class="large-7 push-5 columns">'
+          + '<div class="circle circle-left"></div>'
+          + '</div>'
+          + '<div class="large-5 pull-7 columns path-text left">';
+        }
 
-      return result;
-    }
-  }
+        return result;
+      };
+    };
 
-  Handlebars.registerHelper("leftThenRight", rightFirst(true));
-  var source = $("#timeline-template").html();
-  var html = Handlebars.templates.timeline(timelineData);
-  $(".timelineContent").append(html);
+    Handlebars.registerHelper("leftThenRight", rightFirst(true));
+    $(".timelineContent").append(Handlebars.templates.timeline(timelineData));
 
-  var circles = $(".timelineContent .circle");
-  var first_circle_top = circles.first().offset().top;
-  var last_circle_top = circles.last().offset().top;
-  $(".line").css({"top":first_circle_top + "px", "height": last_circle_top - first_circle_top + "px"});
+    var circles = $(".timelineContent .circle");
+    var firstCircleTop = circles.first().offset().top;
+    var lastCircleTop = circles.last().offset().top;
+    $(".line").css({"top":firstCircleTop + "px", "height": lastCircleTop - firstCircleTop + "px"});
+  }());
 
   $("a.final-video").click(function (event) {
-    var video_height = parseInt($("div.embedded-video").css("height"), 10),
-        line_height = parseInt($(".line").css("height"), 10);
+    var videoHeight = parseInt($("div.embedded-video").css("height"), 10),
+        lineHeight = parseInt($(".line").css("height"), 10);
 
     if($("div.embedded-video").is(":visible")) {
       $("div.embedded-video").hide("slow");
-      $(".line").css("height", line_height - video_height + "px");
+      $(".line").css("height", lineHeight - videoHeight + "px");
     } else {
       $("div.embedded-video").show("slow");
-      $(".line").css("height", line_height + video_height + "px");
+      $(".line").css("height", lineHeight + videoHeight + "px");
     }
     event.preventDefault();
   });
