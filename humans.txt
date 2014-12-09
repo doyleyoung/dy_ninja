@@ -3,4 +3,4 @@
 /* SITE */
   Standards: HTML5, CSS3
   Components: jQuery, Orbit, Reveal
-  Software: Atom, Git
+  Software: Atom, Grunt, Git
