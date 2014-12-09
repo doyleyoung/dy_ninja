@@ -7,6 +7,14 @@ module.exports = function(grunt) {
     jshint: {
       all: ['Gruntfile.js', 'js/app.js']
     },
+    clean: {
+      all: {
+        src: ['js/templates.js', 'minify/all.min.js', 'minify/all.min.css', '../dy_ninja.tar.gz'],
+        options: {
+          force: true
+        }
+      }
+    },
     // tried multiple handlebars plugins, couldn't get them to wrap in an immediate
     // function like command line executable
     shell: {
@@ -64,10 +72,11 @@ module.exports = function(grunt) {
     }
   });
 
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-contrib-compress');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-cssmin');
-  grunt.loadNpmTasks('grunt-contrib-compress');
 
   // Default task(s).
   grunt.registerTask('default', ['jshint','shell','uglify','cssmin']);
