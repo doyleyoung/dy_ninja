@@ -48,12 +48,26 @@ module.exports = function(grunt) {
             'css/app.css']
         }
       }
+    },
+    compress: {
+      main: {
+        options: {
+          archive: '../dy_ninja.tar.gz'
+        },
+        files: [
+          {src: ['humans.txt','index.html','robots.txt'], dest: 'dy_ninja/'},
+          {src: ['examples/*'], dest: 'dy_ninja/'},
+          {src: ['img/*'], dest: 'dy_ninja/'},
+          {src: ['minify/*'], dest: 'dy_ninja/'},
+        ]
+      }
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-contrib-compress');
 
   // Default task(s).
   grunt.registerTask('default', ['jshint','shell','uglify','cssmin']);
