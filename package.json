@@ -1,0 +1,12 @@
+{
+  "name": "dy_ninja",
+  "version": "1.0.0",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-cssmin": "^0.10.0",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-uglify": "^0.6.0",
+    "grunt-shell": "^1.1.1",
+    "load-grunt-tasks": "^1.0.0"
+  }
+}

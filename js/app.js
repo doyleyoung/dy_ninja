@@ -1,4 +1,6 @@
 $(function () {
+  "use strict";
+
   $(window).scroll(function () {
     if ($(this).scrollTop() >= 100) {
       $(".icon-bar > *").stop().animate({padding: "0em"}, 250, "linear");
@@ -146,16 +148,16 @@ $(function () {
         var result = "";
         if(right) {
           right = !right;
-          result = '<div class="large-7 columns">'
-          + '<div class="circle circle-right right"></div>'
-          + '</div>'
-          + '<div class="large-5 columns path-text right">';
+          result = '<div class="large-7 columns">' +
+            '<div class="circle circle-right right"></div>' +
+            '</div>' +
+            '<div class="large-5 columns path-text right">';
         } else {
           right = !right;
-          result = '<div class="large-7 push-5 columns">'
-          + '<div class="circle circle-left"></div>'
-          + '</div>'
-          + '<div class="large-5 pull-7 columns path-text left">';
+          result = '<div class="large-7 push-5 columns">' +
+            '<div class="circle circle-left"></div>' +
+            '</div>' +
+            '<div class="large-5 pull-7 columns path-text left">';
         }
 
         return result;
