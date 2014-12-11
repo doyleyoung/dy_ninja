@@ -4,7 +4,7 @@ Build with grunt, configured actions in default:
 
     grunt ['jshint','shell','uglify','cssmin']
 
-'clean' is also available.
+'clean' and 'compress' are also available.
 
 Grunt replaces (uglify instead of minify):
 
