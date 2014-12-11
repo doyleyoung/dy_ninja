@@ -1,8 +1,10 @@
 This is the source to doyleyoung.ninja.
 
-Build with grunt, all configured actions are in default:
+Build with grunt, configured actions in default:
 
     grunt ['jshint','shell','uglify','cssmin']
+
+'clean' is also available.
 
 Grunt replaces (uglify instead of minify):
 
