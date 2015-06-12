@@ -522,6 +522,6 @@ $(function () {
 
         var rand = backgrounds[Math.floor(Math.random() * backgrounds.length)];
         $('body').css(rand);
-        $('#home, #timeline, #made_with').css({background: "white"});
+        $('#home, #timeline-header, div.row.path-item, #made_with').css({background: "rgba(255,255,255,0.85)"});
     });
 });
