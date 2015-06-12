@@ -487,4 +487,41 @@ $(function () {
         }
         event.preventDefault();
     });
+
+    // Contra!
+    /*jshint multistr: true */
+    Mousetrap.bind('up up down down left right left right b a enter', function () {
+        // from http://lea.verou.me/css3patterns/#
+        var backgrounds = [{
+            background: "linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,\
+        linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,\
+        linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,\
+        linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,\
+        linear-gradient(90deg, #1b1b1b 10px, transparent 10px),\
+        linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424)",
+            "background-color": "#131313",
+            "background-size": "20px 20px"
+        }, {
+            background: "radial-gradient(circle at 50% 59%, #D2CAAB 3%, #364E27 4%, #364E27 11%, rgba(54,78,39,0) 12%, rgba(54,78,39,0)) 50px 0,\
+        radial-gradient(circle at 50% 41%, #364E27 3%, #D2CAAB 4%, #D2CAAB 11%, rgba(210,202,171,0) 12%, rgba(210,202,171,0)) 50px 0,\
+        radial-gradient(circle at 50% 59%, #D2CAAB 3%, #364E27 4%, #364E27 11%, rgba(54,78,39,0) 12%, rgba(54,78,39,0)) 0 50px,\
+        radial-gradient(circle at 50% 41%, #364E27 3%, #D2CAAB 4%, #D2CAAB 11%, rgba(210,202,171,0) 12%, rgba(210,202,171,0)) 0 50px,\
+        radial-gradient(circle at 100% 50%, #D2CAAB 16%, rgba(210,202,171,0) 17%),\
+        radial-gradient(circle at 0% 50%, #364E27 16%, rgba(54,78,39,0) 17%),\
+        radial-gradient(circle at 100% 50%, #D2CAAB 16%, rgba(210,202,171,0) 17%) 50px 50px,\
+        radial-gradient(circle at 0% 50%, #364E27 16%, rgba(54,78,39,0) 17%) 50px 50px",
+            "background-color": "#63773F",
+            "background-size": "100px 100px"
+        }, {
+            "background-color": "#def",
+            "background-image": "radial-gradient(closest-side, transparent 98%, rgba(0,0,0,.3) 99%),\
+        radial-gradient(closest-side, transparent 98%, rgba(0,0,0,.3) 99%)",
+            "background-size": "80px 80px",
+            "background-position": "0 0, 40px 40px"
+        }];
+
+        var rand = backgrounds[Math.floor(Math.random() * backgrounds.length)];
+        $('body').css(rand);
+        $('#home, #timeline, #made_with').css({background: "white"});
+    });
 });

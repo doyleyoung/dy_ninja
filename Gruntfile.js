@@ -38,6 +38,7 @@ module.exports = function (grunt) {
                     'minify/all.min.js': ['js/vendor/jquery.js',
                         'js/foundation.min.js',
                         'js/vendor/handlebars.runtime-v3.0.3.js',
+                        'js/vendor/mousetrap.min.js',
                         'js/templates.js',
                         'js/app.js']
                 }
