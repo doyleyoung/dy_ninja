@@ -62,7 +62,7 @@ module.exports = function (grunt) {
                     archive: '../dy_ninja.tar.gz'
                 },
                 files: [
-                    {src: ['humans.txt', 'index.html', 'robots.txt'], dest: 'dy_ninja/'},
+                    {src: ['humans.txt', 'index.html', 'robots.txt', 'google2d72ff41f6ebea13.html'], dest: 'dy_ninja/'},
                     {src: ['examples/*'], dest: 'dy_ninja/'},
                     {src: ['img/*'], dest: 'dy_ninja/'},
                     {src: ['js/vendor/modernizr.js'], dest: 'dy_ninja/'},
