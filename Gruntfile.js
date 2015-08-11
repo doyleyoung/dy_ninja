@@ -66,6 +66,7 @@ module.exports = function (grunt) {
                     {src: ['examples/*'], dest: 'dy_ninja/'},
                     {src: ['img/*'], dest: 'dy_ninja/'},
                     {src: ['js/vendor/modernizr.js'], dest: 'dy_ninja/'},
+                    {src: ['StarThrow.hyperesources/*'], dest: 'dy_ninja/'},
                     {src: ['minify/*'], dest: 'dy_ninja/'}
                 ]
             }
